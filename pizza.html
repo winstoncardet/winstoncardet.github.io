@@ -11,7 +11,6 @@
   <h1>Pizza Ordering Form</h1>
 
   <form action="#" method="post">
-
     <section aria-labelledby="contact">
       <h2 id="contact">Contact Information</h2>
 
@@ -22,7 +21,15 @@
 
       <p>
         <label for="phone">Phone:</label>
-        <input id="phone" name="phone" type="tel" required>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          placeholder="1234567890"
+          required>
       </p>
 
       <p>
@@ -104,23 +111,23 @@
         <button type="submit">Submit</button>
       </p>
     </section>
-
   </form>
 
   <section aria-labelledby="games">
     <h2 id="games">List of My Favorite Games</h2>
 
     <table border="1">
+      <caption>Favorite Video Games</caption>
       <thead>
         <tr>
-          <th>Developer</th>
-          <th>Title</th>
-          <th>Year</th>
+          <th scope="col">Developer</th>
+          <th scope="col">Title</th>
+          <th scope="col">Year</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th rowspan="3">Bungie</th>
+          <th scope="rowgroup" rowspan="3">Bungie</th>
           <td>Halo</td>
           <td>2001</td>
         </tr>
@@ -133,18 +140,17 @@
           <td>2007</td>
         </tr>
         <tr>
-          <th>Mojang</th>
+          <th scope="row">Mojang</th>
           <td>Minecraft</td>
           <td>2011</td>
         </tr>
         <tr>
-          <th>Count</th>
+          <th scope="row">Count</th>
           <td colspan="2">4</td>
         </tr>
       </tbody>
     </table>
   </section>
-
 </main>
 
 </body>
