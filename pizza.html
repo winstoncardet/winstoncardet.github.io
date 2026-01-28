@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <title>Pizza Ordering Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -12,8 +10,8 @@
 
   <form action="#" method="post">
 
-    <section aria-labelledby="contact">
-      <h2 id="contact">Contact Information</h2>
+    <section>
+      <h2>Contact Information</h2>
 
       <p>
         <label for="name">Name:</label>
@@ -26,7 +24,6 @@
           id="phone"
           name="phone"
           type="tel"
-          inputmode="numeric"
           pattern="[0-9]{10}"
           maxlength="10"
           required>
@@ -38,8 +35,8 @@
       </p>
     </section>
 
-    <section aria-labelledby="size">
-      <h2 id="size">Select Pizza Size</h2>
+    <section>
+      <h2>Select Pizza Size</h2>
 
       <p>
         <label for="pizza-size">Pizza Size:</label>
@@ -52,8 +49,8 @@
       </p>
     </section>
 
-    <section aria-labelledby="sauce">
-      <h2 id="sauce">Select Sauce</h2>
+    <section>
+      <h2>Select Sauce</h2>
 
       <p>
         <input id="marinara" name="sauce" type="radio" value="marinara" required>
@@ -71,8 +68,8 @@
       </p>
     </section>
 
-    <section aria-labelledby="toppings">
-      <h2 id="toppings">Select Toppings</h2>
+    <section>
+      <h2>Select Toppings</h2>
 
       <p>
         <input id="pepperoni" name="toppings" type="checkbox" value="pepperoni">
@@ -99,8 +96,8 @@
       </p>
     </section>
 
-    <section aria-labelledby="instructions">
-      <h2 id="instructions">Additional Instructions</h2>
+    <section>
+      <h2>Additional Instructions</h2>
 
       <p>
         <label for="notes">Add instructions</label><br>
@@ -114,43 +111,43 @@
 
   </form>
 
-  <section aria-labelledby="games">
-  <p id="games">List of My Favorite Games</p>
+  <section>
+    <p>List of My Favorite Games</p>
 
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Developer</th>
-        <th>Title</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="3">Valve</th>
-        <td>Counter-Strike 1.6</td>
-        <td>2003</td>
-      </tr>
-      <tr>
-        <td>Counter-Strike: Source</td>
-        <td>2004</td>
-      </tr>
-      <tr>
-        <td>Counter-Strike: Global Offensive</td>
-        <td>2012</td>
-      </tr>
-      <tr>
-        <th>Mojang</th>
-        <td>Minecraft</td>
-        <td>2011</td>
-      </tr>
-      <tr>
-        <th>Count</th>
-        <td colspan="2">4</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Developer</th>
+          <th>Title</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3">Valve</th>
+          <td>Counter-Strike 1.6</td>
+          <td>2003</td>
+        </tr>
+        <tr>
+          <td>Counter-Strike: Source</td>
+          <td>2004</td>
+        </tr>
+        <tr>
+          <td>Counter-Strike: Global Offensive</td>
+          <td>2012</td>
+        </tr>
+        <tr>
+          <th>Mojang</th>
+          <td>Minecraft</td>
+          <td>2011</td>
+        </tr>
+        <tr>
+          <th>Count</th>
+          <td colspan="2">4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
 </main>
 
