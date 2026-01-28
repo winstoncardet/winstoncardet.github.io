@@ -6,131 +6,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
-  <h1>Pizza Ordering Form</h1>
-</header>
 
 <main>
-  <section aria-labelledby="order-section">
-    <h2 id="order-section">Order Details</h2>
+  <h1>Pizza Ordering Form</h1>
 
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Contact Information</legend>
+  <form action="#" method="post">
 
-        <p>
-          <label for="name">Name:</label>
-          <input id="name" name="name" type="text" required>
-        </p>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact Information</h2>
 
-        <p>
-          <label for="phone">Phone:</label>
-          <input id="phone" name="phone" type="tel" required>
-        </p>
+      <p>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required>
+      </p>
 
-        <p>
-          <label for="email">Email:</label>
-          <input id="email" name="email" type="email" required>
-        </p>
-      </fieldset>
+      <p>
+        <label for="phone">Phone:</label>
+        <input id="phone" name="phone" type="tel" required>
+      </p>
 
-      <fieldset>
-        <legend>Select Pizza Size</legend>
+      <p>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+      </p>
+    </section>
 
-        <p>
-          <label for="size">Pizza Size:</label>
-          <select id="size" name="size" required>
-            <option value="" selected>Select Size</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xlarge">XLarge</option>
-          </select>
-        </p>
-      </fieldset>
+    <section aria-labelledby="size">
+      <h2 id="size">Select Pizza Size</h2>
 
-      <fieldset>
-        <legend>Select Sauce</legend>
+      <p>
+        <label for="pizza-size">Pizza Size:</label>
+        <select id="pizza-size" name="pizza_size" required>
+          <option value="" selected>Select Size</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xlarge">XLarge</option>
+        </select>
+      </p>
+    </section>
 
-        <p>
-          <input id="marinara" name="sauce" type="radio" value="marinara" required>
-          <label for="marinara">Marinara</label>
-        </p>
+    <section aria-labelledby="sauce">
+      <h2 id="sauce">Select Sauce</h2>
 
-        <p>
-          <input id="ranch" name="sauce" type="radio" value="ranch">
-          <label for="ranch">Ranch</label>
-        </p>
+      <p>
+        <input id="marinara" name="sauce" type="radio" value="marinara" required>
+        <label for="marinara">Marinara</label>
+      </p>
 
-        <p>
-          <input id="nosauce" name="sauce" type="radio" value="no-sauce">
-          <label for="nosauce">No Sauce</label>
-        </p>
-      </fieldset>
+      <p>
+        <input id="ranch" name="sauce" type="radio" value="ranch">
+        <label for="ranch">Ranch</label>
+      </p>
 
-      <fieldset>
-        <legend>Select Toppings</legend>
+      <p>
+        <input id="nosauce" name="sauce" type="radio" value="no-sauce">
+        <label for="nosauce">No Sauce</label>
+      </p>
+    </section>
 
-        <p>
-          <input id="pepperoni" name="toppings" type="checkbox" value="pepperoni">
-          <label for="pepperoni">Pepperoni</label>
-        </p>
+    <section aria-labelledby="toppings">
+      <h2 id="toppings">Select Toppings</h2>
 
-        <p>
-          <input id="sausage" name="toppings" type="checkbox" value="sausage">
-          <label for="sausage">Sausage</label>
-        </p>
+      <p>
+        <input id="pepperoni" name="toppings" type="checkbox" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
 
-        <p>
-          <input id="mushroom" name="toppings" type="checkbox" value="mushrooms">
-          <label for="mushroom">Mushroom</label>
-        </p>
+        <input id="sausage" name="toppings" type="checkbox" value="sausage">
+        <label for="sausage">Sausage</label>
+      </p>
 
-        <p>
-          <input id="pineapple" name="toppings" type="checkbox" value="pineapple">
-          <label for="pineapple">Pineapple</label>
-        </p>
+      <p>
+        <input id="mushroom" name="toppings" type="checkbox" value="mushroom">
+        <label for="mushroom">Mushroom</label>
 
-        <p>
-          <input id="peppers" name="toppings" type="checkbox" value="peppers">
-          <label for="peppers">Peppers</label>
-        </p>
+        <input id="pineapple" name="toppings" type="checkbox" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+      </p>
 
-        <p>
-          <input id="onions" name="toppings" type="checkbox" value="onions">
-          <label for="onions">Onions</label>
-        </p>
-      </fieldset>
+      <p>
+        <input id="peppers" name="toppings" type="checkbox" value="peppers">
+        <label for="peppers">Peppers</label>
 
-      <fieldset>
-        <legend>Additional Instructions</legend>
+        <input id="onions" name="toppings" type="checkbox" value="onions">
+        <label for="onions">Onions</label>
+      </p>
+    </section>
 
-        <p>
-          <label for="instructions">Add instructions</label><br>
-          <textarea id="instructions" name="instructions" rows="4" cols="24"></textarea>
-        </p>
-      </fieldset>
+    <section aria-labelledby="instructions">
+      <h2 id="instructions">Additional Instructions</h2>
+
+      <p>
+        <label for="notes">Add instructions</label><br>
+        <textarea id="notes" name="instructions" rows="4" cols="24"></textarea>
+      </p>
 
       <p>
         <button type="submit">Submit</button>
       </p>
-    </form>
-  </section>
+    </section>
 
-  <section aria-labelledby="games-section">
-    <h2 id="games-section">List of My Favorite Games</h2>
+  </form>
+
+  <section aria-labelledby="games">
+    <h2 id="games">List of My Favorite Games</h2>
 
     <table border="1">
-      <caption>Favorite Video Games</caption>
       <thead>
         <tr>
-          <th scope="col">Developer</th>
-          <th scope="col">Title</th>
-          <th scope="col">Year</th>
+          <th>Developer</th>
+          <th>Title</th>
+          <th>Year</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="rowgroup" rowspan="3">Bungie</th>
+          <th rowspan="3">Bungie</th>
           <td>Halo</td>
           <td>2001</td>
         </tr>
@@ -142,25 +132,20 @@
           <td>Halo 3</td>
           <td>2007</td>
         </tr>
-
         <tr>
-          <th scope="row">Mojang</th>
+          <th>Mojang</th>
           <td>Minecraft</td>
           <td>2011</td>
         </tr>
-
         <tr>
-          <th scope="row">Count</th>
+          <th>Count</th>
           <td colspan="2">4</td>
         </tr>
       </tbody>
     </table>
   </section>
+
 </main>
 
-<footer>
-  <p>Web Development Assignment</p>
-</footer>
 </body>
 </html>
-
