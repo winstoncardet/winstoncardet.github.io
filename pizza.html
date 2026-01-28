@@ -1,1 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pizza Ordering Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+  <h1>Pizza Ordering Form</h1>
+</header>
+
+<main>
+  <section aria-labelledby="order-section">
+    <h2 id="order-section">Order Details</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <p>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone:</label>
+          <input id="phone" name="phone" type="tel" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Pizza Size</legend>
+
+        <p>
+          <label for="size">Pizza Size:</label>
+          <select id="size" name="size" required>
+            <option value="" selected>Select Size</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">XLarge</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Sauce</legend>
+
+        <p>
+          <input id="marinara" name="sauce" type="radio" value="marinara" required>
+          <label for="marinara">Marinara</label>
+        </p>
+
+        <p>
+          <input id="ranch" name="sauce" type="radio" value="ranch">
+          <label for="ranch">Ranch</label>
+        </p>
+
+        <p>
+          <input id="nosauce" name="sauce" type="radio" value="no-sauce">
+          <label for="nosauce">No Sauce</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Toppings</legend>
+
+        <p>
+          <input id="pepperoni" name="toppings" type="checkbox" value="pepperoni">
+          <label for="pepperoni">Pepperoni</label>
+        </p>
+
+        <p>
+          <input id="sausage" name="toppings" type="checkbox" value="sausage">
+          <label for="sausage">Sausage</label>
+        </p>
+
+        <p>
+          <input id="mushroom" name="toppings" type="checkbox" value="mushrooms">
+          <label for="mushroom">Mushroom</label>
+        </p>
+
+        <p>
+          <input id="pineapple" name="toppings" type="checkbox" value="pineapple">
+          <label for="pineapple">Pineapple</label>
+        </p>
+
+        <p>
+          <input id="peppers" name="toppings" type="checkbox" value="peppers">
+          <label for="peppers">Peppers</label>
+        </p>
+
+        <p>
+          <input id="onions" name="toppings" type="checkbox" value="onions">
+          <label for="onions">Onions</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Instructions</legend>
+
+        <p>
+          <label for="instructions">Add instructions</label><br>
+          <textarea id="instructions" name="instructions" rows="4" cols="24"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </section>
+
+  <section aria-labelledby="games-section">
+    <h2 id="games-section">List of My Favorite Games</h2>
+
+    <table border="1">
+      <caption>Favorite Video Games</caption>
+      <thead>
+        <tr>
+          <th scope="col">Developer</th>
+          <th scope="col">Title</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="3">Bungie</th>
+          <td>Halo</td>
+          <td>2001</td>
+        </tr>
+        <tr>
+          <td>Halo 2</td>
+          <td>2004</td>
+        </tr>
+        <tr>
+          <td>Halo 3</td>
+          <td>2007</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Mojang</th>
+          <td>Minecraft</td>
+          <td>2011</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Count</th>
+          <td colspan="2">4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Web Development Assignment</p>
+</footer>
+</body>
+</html>
 
